@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>S'inscrire</title>
+
+</head>
+
+<body>
+
+  <div class=" px-300 justify-center items-center bg-orange-400 px-60 rounded-lg">
+    <form class="bg-white p-10 rounded-lg shadow-lg min-w-full" action="#" method="post">
+      <h1 class="text-center text-2xl mb-6 text-gray-600 font-bold font-sans">S'inscrire</h1>
+      <div>
+        <label class="text-gray-800 font-semibold block my-3 text-md" for="nom">Nom</label>
+        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none nom" type="text" id="nom"
+          placeholder="nom" autocomplete="given-name" />
+      </div>
+      <div>
+        <label class="text-gray-800 font-semibold block my-3 text-md" for="prenom">Prénom</label>
+        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none prenom " type="text" id="prenom"
+          placeholder="prenom" autocomplete="given-name" />
+      </div>
+      <div>
+        <label class="text-gray-800 font-semibold block my-3 text-md" for="email">Email</label>
+        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none email" id="email" type="text"
+          placeholder="@email" autocomplete="email"/>
+      <div>
+        <label class="text-gray-800 font-semibold block my-3 text-md" for="passwordd">Password</label>
+        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none password" type="password"
+          id="passwordd" id="password" placeholder="password" autocomplete="off" />
+      </div>
+
+      <div>
+        <label class="text-gray-800 font-semibold block my-3 text-md" for="telephone">Téléphone</label>
+        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none telephone" type="tel" id="telephone"
+          placeholder="telephone" autocomplete="tel-national" />
+      </div>
+      <div>
+        <label class="text-gray-800 font-semibold block my-3 text-md" for="adresse">Adresse</label>
+        <input class="w-full bg-gray-100 px-4 py-2 rounded-lg focus:outline-none adresse" type="text" id="adresse"
+          placeholder="Adresse" autocomplete="street-address" />
+      </div>
+
+      <button type="submit" onclick="handleRegister()" id="submit"
+        class="w-full mt-6 bg-indigo-600 rounded-lg px-4 py-2 text-lg text-white tracking-wide font-semibold font-sans register">S'inscrire</button>
+  </div>
+  </div>
+  </form>
+  </div>
+
+
+
+  <script src="../index.js"></script>
+</body>
+
+</html>
